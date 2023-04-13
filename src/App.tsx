@@ -1,24 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+/** @jsxImportSource @emotion/react */
+
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { DaySummary } from "./components/templates/DaySummary";
+import { Container, Typography, useTheme } from "@mui/material";
+import { CalendarLink } from "./components/organisms/CalendarLink";
+import { fontTypes } from "./utils/styles/font";
 
 function App() {
+  const theme = useTheme();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container sx={{ minHeight: "100vh", p: 2 }}>
+        <DaySummary />
+        <Typography css={fontTypes(theme).title} my={2}>
+          カレンダーを追加
+        </Typography>
+        <CalendarLink />
+      </Container>
     </div>
   );
 }
