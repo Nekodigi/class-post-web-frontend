@@ -42,7 +42,8 @@ export const CalendarLink = () => {
           </Typography>
           <QRCode
             style={{ width: "100px", height: "100px" }}
-            value={`https://calendar.google.com/calendar/u/0/r?cid=${calendar.id}
+            value={`
+            https://calendar.google.com/calendar/u/0/r?cid=${calendar.id}
             @group.calendar.google.com`}
           />
         </Box>
