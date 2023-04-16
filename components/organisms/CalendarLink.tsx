@@ -45,7 +45,8 @@ export const CalendarLink = () => {
             https://calendar.google.com/calendar/u/0/r?cid=${calendar.id}`}
           >
             <QRCode
-              style={{ width: "100px", height: "100px" }}
+              style={{ width: "70px", height: "70px" }}
+              fgColor="#888888"
               value={`
             https://calendar.google.com/calendar/u/0/r?cid=${calendar.id}`}
             />
