@@ -40,14 +40,6 @@ export const CalendarLink = () => {
           <Typography css={fontTypes(theme).body}>
             {calendar.summary}
           </Typography>
-<<<<<<< HEAD:src/components/organisms/CalendarLink.tsx
-          <QRCode
-            style={{ width: "100px", height: "100px" }}
-            value={`
-            https://calendar.google.com/calendar/u/0/r?cid=${calendar.id}
-            @group.calendar.google.com`}
-          />
-=======
           <a
             href={`
             https://calendar.google.com/calendar/u/0/r?cid=${calendar.id}`}
@@ -59,7 +51,6 @@ export const CalendarLink = () => {
             https://calendar.google.com/calendar/u/0/r?cid=${calendar.id}`}
             />
           </a>
->>>>>>> 8b77948a8e7d8a16bfd58772be5efb8eb61f0bc0:components/organisms/CalendarLink.tsx
         </Box>
       ))}
     </Stack>
