@@ -1,12 +1,10 @@
 /** @jsxImportSource @emotion/react */
 
-import { Inter } from "next/font/google";
 import { Container, Typography, useTheme } from "@mui/material";
 import { DaySummary } from "@/components/organisms/DaySummary";
 import { fontTypes } from "@/utils/styles/font";
 import { CalendarLink } from "@/components/organisms/CalendarLink";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const theme = useTheme();
