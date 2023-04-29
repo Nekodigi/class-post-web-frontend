@@ -7,7 +7,7 @@ import { Box, Button, Container, Typography, useTheme } from "@mui/material";
 import React, { useCallback } from "react";
 import { FullScreen, useFullScreenHandle } from "react-full-screen";
 
-export default function Test() {
+export default function Display() {
   const theme = useTheme();
 
   const handle = useFullScreenHandle();
