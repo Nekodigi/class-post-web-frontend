@@ -48,7 +48,9 @@ export default function Test() {
     calendars.map(calendar =>`&color=${encodeURIComponent("#"+randomColor())}`).join("")
   , [calendars])
 
-  useEffect(() => {console.log(`https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FTokyo&showNav=1&showTz=0&showCalendars=0&showTabs=0&showPrint=0&showDate=1&showTitle=0${srcs}${colors}`)}, [srcs])
+  useEffect(() => {
+    handle.enter();
+  }, [srcs])
 
  
 
