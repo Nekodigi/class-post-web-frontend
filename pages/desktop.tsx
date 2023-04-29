@@ -30,7 +30,7 @@ export default function Test() {
     if (calledOnce.current) return;
     calledOnce.current = true;
     fetchUpdate();
-    //setInterval(fetchUpdate, 60 * 1000);
+    setInterval(fetchUpdate, 600 * 1000);
     //return;
   }, []);
 
@@ -47,10 +47,6 @@ export default function Test() {
   const colors = useMemo(() => 
     calendars.map(calendar =>`&color=${encodeURIComponent("#"+randomColor())}`).join("")
   , [calendars])
-
-  useEffect(() => {
-    handle.enter();
-  }, [srcs])
 
  
 

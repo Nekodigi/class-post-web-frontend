@@ -29,7 +29,7 @@ export const CalendarLink = () => {
     if (calledOnce.current) return;
     calledOnce.current = true;
     fetchUpdate();
-    //setInterval(fetchUpdate, 60 * 1000);
+    setInterval(fetchUpdate, 600 * 1000);
     //return;
   }, []);
 
